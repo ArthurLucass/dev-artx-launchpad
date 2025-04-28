@@ -1,39 +1,15 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-
-const features = [
-  {
-    icon: "🎨",
-    title: "Modern, Custom Designs",
-    description: "Tailored websites that impress and convert.",
-  },
-  {
-    icon: "⚡",
-    title: "Lightning Fast Delivery",
-    description: "We launch projects in record time.",
-  },
-  {
-    icon: "📈",
-    title: "Optimized for Conversions",
-    description: "Designed to turn visitors into customers.",
-  },
-  {
-    icon: "🔗",
-    title: "Link Pages for Personal Brands",
-    description: "Perfect for influencers, entrepreneurs, and creators.",
-  },
-  {
-    icon: "🛠️",
-    title: "Full Setup Support",
-    description: "From concept to launch — we handle it all.",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const FeaturesSection = () => {
+  const { translations } = useLanguage();
+  const features = translations.features.items;
+
   return (
     <section className="section-padding bg-gray-50" id="features">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="section-title text-center">Why Choose Dev Artx?</h2>
+        <h2 className="section-title text-center">{translations.features.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {features.map((feature, index) => (

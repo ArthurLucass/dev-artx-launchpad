@@ -8,8 +8,12 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FaqSection from '@/components/FaqSection';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Index = () => {
+  // Access translations if needed at page level
+  const { translations } = useLanguage();
+  
   return (
     <div className="min-h-screen">
       <Header />

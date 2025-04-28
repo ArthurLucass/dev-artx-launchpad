@@ -1,7 +1,10 @@
 
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection = () => {
+  const { translations } = useLanguage();
+  
   return (
     <section className="pt-28 pb-16 md:pt-36 md:pb-24 px-4 md:px-6 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-full h-full">
@@ -13,21 +16,21 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="z-10">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Build Your Digital Presence with <br />
+              {translations.hero.title} <br />
               <span className="gradient-text">Dev Artx</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
-              Launch your Portfolio, Website, Landing Page, or Sales Page with stunning speed and style.
+              {translations.hero.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild className="btn-primary text-lg">
                 <a href="#contact">
-                  Get Started Today →
+                  {translations.hero.getStarted}
                 </a>
               </Button>
               <Button variant="outline" asChild className="btn-secondary text-lg">
                 <a href="#portfolio">
-                  See Our Work
+                  {translations.hero.seeWork}
                 </a>
               </Button>
             </div>

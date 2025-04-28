@@ -1,29 +1,15 @@
 
 import { Button } from "@/components/ui/button";
-
-const steps = [
-  {
-    number: "01",
-    title: "Tell Us Your Vision",
-    description: "Brief us with your project goals.",
-  },
-  {
-    number: "02",
-    title: "We Create",
-    description: "Custom design and develop your page.",
-  },
-  {
-    number: "03",
-    title: "Launch & Celebrate",
-    description: "You go live with a stunning new site!",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProcessSection = () => {
+  const { translations } = useLanguage();
+  const steps = translations.process.steps;
+
   return (
     <section className="section-padding bg-gradient-primary text-white" id="process">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="section-title text-white text-center">How It Works</h2>
+        <h2 className="section-title text-white text-center">{translations.process.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
           {steps.map((step, index) => (
@@ -45,7 +31,7 @@ const ProcessSection = () => {
         
         <div className="mt-16 text-center">
           <Button asChild className="btn-secondary bg-white text-brand-blue hover:bg-white/90">
-            <a href="#contact">Start My Project →</a>
+            <a href="#contact">{translations.process.cta}</a>
           </Button>
         </div>
       </div>

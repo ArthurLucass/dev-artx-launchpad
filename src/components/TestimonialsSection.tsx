@@ -1,31 +1,17 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-
-const testimonials = [
-  {
-    quote: "Dev Artx transformed my online presence. I got a stunning portfolio and landed two clients in the first month!",
-    author: "Sarah M.",
-    role: "Photographer",
-  },
-  {
-    quote: "I needed a sales page urgently. They delivered in 5 days and I tripled my revenue!",
-    author: "Jake T.",
-    role: "Entrepreneur",
-  },
-  {
-    quote: "Finally found a team that understands minimalism and impact. 10/10 work.",
-    author: "Amanda R.",
-    role: "Influencer",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const TestimonialsSection = () => {
+  const { translations } = useLanguage();
+  const testimonials = translations.testimonials.items;
+
   return (
     <section className="section-padding" id="testimonials">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="section-title text-center">Testimonials</h2>
+        <h2 className="section-title text-center">{translations.testimonials.title}</h2>
         <p className="section-subtitle text-center">
-          Don't take our word for it - hear what our clients have to say
+          {translations.testimonials.subtitle}
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
