@@ -1,4 +1,3 @@
-
 export const ptBR = {
   header: {
     services: 'Serviços',
@@ -41,6 +40,36 @@ export const ptBR = {
         title: 'Suporte de Configuração Completo',
         description: 'Do conceito ao lançamento — cuidamos de tudo.'
       }
+    ]
+  },
+  services: {
+    title: 'Serviços que Oferecemos',
+    subtitle: 'Soluções web profissionais adaptadas às suas necessidades específicas',
+    items: [
+      {
+        title: "Sites de Portfólio",
+        description: "Portfólios pessoais ou profissionais, lindamente elaborados.",
+        icon: "💼",
+        popular: false,
+      },
+      {
+        title: "Páginas de Destino",
+        description: "Páginas de alta conversão que vendem seus produtos/serviços.",
+        icon: "🚀",
+        popular: true,
+      },
+      {
+        title: "Páginas de Vendas",
+        description: "Páginas completas otimizadas para máxima receita.",
+        icon: "💰",
+        popular: false,
+      },
+      {
+        title: "Páginas de Links",
+        description: "Perfeito para Instagram, TikTok e cartões de visita digitais.",
+        icon: "🔗",
+        popular: false,
+      },
     ]
   },
   process: {
@@ -111,10 +140,16 @@ export const ptBR = {
     ]
   },
   cta: {
-    title: 'Pronto para Lançar Seu Site dos Sonhos?',
+    title: 'Pronto para Lançar o Site dos Seus Sonhos?',
     subtitle: 'Vamos construir algo incrível juntos que ajude seu negócio a crescer',
-    startProject: '🚀 Iniciar Seu Projeto →',
-    bookCall: '📅 Agendar uma Ligação →'
+    formTitle: 'Entre em Contato',
+    nameLabel: 'Seu Nome',
+    namePlaceholder: 'Digite seu nome',
+    serviceLabel: 'Serviço',
+    servicePlaceholder: 'Selecione um serviço',
+    descriptionLabel: 'Descrição do Projeto',
+    descriptionPlaceholder: 'Conte-nos sobre seu projeto...',
+    submitButton: 'Enviar Solicitação'
   },
   languageToggle: {
     pt: 'PT',

@@ -1,4 +1,3 @@
-
 export const enUS = {
   header: {
     services: 'Services',
@@ -41,6 +40,36 @@ export const enUS = {
         title: 'Full Setup Support',
         description: 'From concept to launch — we handle it all.'
       }
+    ]
+  },
+  services: {
+    title: 'Services We Offer',
+    subtitle: 'Professional web solutions tailored to your specific needs',
+    items: [
+      {
+        title: "Portfolio Websites",
+        description: "Personal or Professional portfolios, beautifully crafted.",
+        icon: "💼",
+        popular: false,
+      },
+      {
+        title: "Landing Pages",
+        description: "High-converting pages that sell your products/services.",
+        icon: "🚀",
+        popular: true,
+      },
+      {
+        title: "Sales Pages",
+        description: "Full-fledged pages optimized for maximum revenue.",
+        icon: "💰",
+        popular: false,
+      },
+      {
+        title: "Link Pages",
+        description: "Perfect for Instagram, TikTok, and digital business cards.",
+        icon: "🔗",
+        popular: false,
+      },
     ]
   },
   process: {
@@ -113,8 +142,14 @@ export const enUS = {
   cta: {
     title: 'Ready to Launch Your Dream Site?',
     subtitle: 'Let\'s build something amazing together that helps your business grow',
-    startProject: '🚀 Start Your Project →',
-    bookCall: '📅 Book a Call →'
+    formTitle: 'Contact Us',
+    nameLabel: 'Your Name',
+    namePlaceholder: 'Enter your name',
+    serviceLabel: 'Service',
+    servicePlaceholder: 'Select a service',
+    descriptionLabel: 'Project Description',
+    descriptionPlaceholder: 'Tell us about your project...',
+    submitButton: 'Submit Request'
   },
   languageToggle: {
     pt: 'PT',

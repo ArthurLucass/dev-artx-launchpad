@@ -1,41 +1,18 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-
-const services = [
-  {
-    title: "Portfolio Websites",
-    description: "Personal or Professional portfolios, beautifully crafted.",
-    icon: "💼",
-    popular: false,
-  },
-  {
-    title: "Landing Pages",
-    description: "High-converting pages that sell your products/services.",
-    icon: "🚀",
-    popular: true,
-  },
-  {
-    title: "Sales Pages",
-    description: "Full-fledged pages optimized for maximum revenue.",
-    icon: "💰",
-    popular: false,
-  },
-  {
-    title: "Link Pages",
-    description: "Perfect for Instagram, TikTok, and digital business cards.",
-    icon: "🔗",
-    popular: false,
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ServicesSection = () => {
+  const { translations } = useLanguage();
+  const services = translations.services.items;
+  
   return (
     <section className="section-padding" id="services">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="section-title text-center">Services We Offer</h2>
+        <h2 className="section-title text-center">{translations.services.title}</h2>
         <p className="section-subtitle text-center">
-          Professional web solutions tailored to your specific needs
+          {translations.services.subtitle}
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
@@ -57,7 +34,7 @@ const ServicesSection = () => {
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full btn-primary mt-4">
-                  <a href="#contact">Learn More</a>
+                  <a href="#contact">{translations.header.getStarted}</a>
                 </Button>
               </CardFooter>
             </Card>
