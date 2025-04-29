@@ -1,3 +1,4 @@
+
 export const ptBR = {
   header: {
     services: 'Serviços',
@@ -145,14 +146,28 @@ export const ptBR = {
     formTitle: 'Entre em Contato',
     nameLabel: 'Seu Nome',
     namePlaceholder: 'Digite seu nome',
+    emailLabel: 'Endereço de Email',
+    emailPlaceholder: 'Digite seu email',
     serviceLabel: 'Serviço',
     servicePlaceholder: 'Selecione um serviço',
+    otherService: 'Outro Serviço',
     descriptionLabel: 'Descrição do Projeto',
     descriptionPlaceholder: 'Conte-nos sobre seu projeto...',
-    submitButton: 'Enviar Solicitação'
+    submitButton: 'Enviar Solicitação',
+    submitting: 'Enviando...',
+    successTitle: 'Sucesso!',
+    successMessage: 'Sua solicitação foi enviada com sucesso. Entraremos em contato em breve!',
+    errorTitle: 'Erro',
+    errorMessage: 'Algo deu errado. Por favor, tente novamente mais tarde.',
+    privacyNote: 'Suas informações estão seguras e serão usadas apenas para responder à sua consulta.'
   },
   languageToggle: {
     pt: 'PT',
     en: 'EN'
+  },
+  meta: {
+    title: 'Dev Artx - Design e Desenvolvimento Web Profissional',
+    description: 'Serviços personalizados de desenvolvimento web incluindo sites de portfólio, páginas de destino e soluções digitais para empresas e indivíduos.',
+    keywords: 'design web, desenvolvimento web, sites de portfólio, páginas de destino, páginas de vendas, páginas de links'
   }
 };

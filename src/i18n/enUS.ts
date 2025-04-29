@@ -1,3 +1,4 @@
+
 export const enUS = {
   header: {
     services: 'Services',
@@ -145,14 +146,28 @@ export const enUS = {
     formTitle: 'Contact Us',
     nameLabel: 'Your Name',
     namePlaceholder: 'Enter your name',
+    emailLabel: 'Email Address',
+    emailPlaceholder: 'Enter your email',
     serviceLabel: 'Service',
     servicePlaceholder: 'Select a service',
+    otherService: 'Other Service',
     descriptionLabel: 'Project Description',
     descriptionPlaceholder: 'Tell us about your project...',
-    submitButton: 'Submit Request'
+    submitButton: 'Submit Request',
+    submitting: 'Submitting...',
+    successTitle: 'Success!',
+    successMessage: 'Your request has been submitted successfully. We\'ll be in touch soon!',
+    errorTitle: 'Error',
+    errorMessage: 'Something went wrong. Please try again later.',
+    privacyNote: 'Your information is secure and will only be used to respond to your inquiry.'
   },
   languageToggle: {
     pt: 'PT',
     en: 'EN'
+  },
+  meta: {
+    title: 'Dev Artx - Professional Web Design & Development',
+    description: 'Custom web development services including portfolio websites, landing pages, and digital solutions for businesses and individuals.',
+    keywords: 'web design, web development, portfolio websites, landing pages, sales pages, link pages'
   }
 };
