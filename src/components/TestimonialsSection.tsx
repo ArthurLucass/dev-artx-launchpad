@@ -1,13 +1,11 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
-
 const TestimonialsSection = () => {
-  const { translations } = useLanguage();
+  const {
+    translations
+  } = useLanguage();
   const testimonials = translations.testimonials.items;
-
-  return (
-    <section className="section-padding bg-brand-background" id="testimonials">
+  return <section className="section-padding bg-brand-background" id="testimonials">
       <div className="container mx-auto max-w-6xl">
         <h2 className="section-title text-center font-anton uppercase tracking-wider">{translations.testimonials.title}</h2>
         <p className="section-subtitle text-center">
@@ -15,9 +13,8 @@ const TestimonialsSection = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="card-hover bg-[#0056c7] border border-brand-text/10">
-              <CardContent className="p-6">
+          {testimonials.map((testimonial, index) => <Card key={index} className="card-hover bg-[#0056c7] border border-brand-text/10">
+              <CardContent className="">
                 <div className="text-3xl mb-6 text-brand-text/70">"</div>
                 <p className="mb-6 text-lg italic text-brand-text/90">{testimonial.quote}</p>
                 <div className="flex items-center">
@@ -30,12 +27,9 @@ const TestimonialsSection = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default TestimonialsSection;
