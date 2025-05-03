@@ -20,8 +20,7 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Coco Gothic', 'sans-serif'],
-				anton: ['Anton', 'sans-serif'],
+				sans: ['Poppins', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -68,16 +67,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					background: '#004aad',  // Atualizado para azul forte
-					text: '#fffcef',        // Mantido o branco quente
-					blue: '#0A84FF',        // Azul claro para destaque
-					darkBlue: '#00388c',    // Azul mais escuro para contrastes
+					blue: '#0A84FF',
+					darkBlue: '#0047FF',
 					black: '#000000',
 					white: '#FFFFFF',
 				}
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(90deg, #0056c7 0%, #004aad 100%)', // Atualizado para tons de azul
+				'gradient-primary': 'linear-gradient(90deg, #0A84FF 0%, #0047FF 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

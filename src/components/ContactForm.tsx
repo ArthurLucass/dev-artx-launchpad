@@ -14,7 +14,7 @@ interface FormValues {
   name: string;
   service: string;
   description: string;
-  email: string;
+  email: string; // Added email field
 }
 
 const ContactForm = () => {
@@ -84,8 +84,8 @@ const ContactForm = () => {
   
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-white rounded-lg p-8 shadow-lg border border-gray-200 max-w-md mx-auto">
-        <h3 className="text-xl font-anton uppercase tracking-wide mb-6 text-gray-800">{translations.cta.formTitle}</h3>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-white rounded-lg p-6 shadow-lg border border-gray-100 max-w-md mx-auto">
+        <h3 className="text-xl font-bold mb-4 text-neutral-950">{translations.cta.formTitle}</h3>
         
         <FormField
           control={form.control}
@@ -99,10 +99,10 @@ const ContactForm = () => {
                   placeholder={translations.cta.namePlaceholder} 
                   {...field} 
                   disabled={isSubmitting}
-                  className="bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-500" 
+                  className="focus:ring-blue-500 focus:border-blue-500" 
                 />
               </FormControl>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -126,10 +126,10 @@ const ContactForm = () => {
                   placeholder={translations.cta.emailPlaceholder || "Enter your email"} 
                   {...field} 
                   disabled={isSubmitting}
-                  className="bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-500" 
+                  className="focus:ring-blue-500 focus:border-blue-500" 
                 />
               </FormControl>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -143,19 +143,19 @@ const ContactForm = () => {
               <FormLabel className="text-gray-700 font-medium">{translations.cta.serviceLabel}</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value} disabled={isSubmitting}>
                 <FormControl>
-                  <SelectTrigger className="bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-500">
+                  <SelectTrigger className="border-gray-300 focus:ring-blue-500 focus:border-blue-500">
                     <SelectValue placeholder={translations.cta.servicePlaceholder} />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="bg-white border border-gray-200 text-gray-900">
+                <SelectContent className="bg-white border border-gray-200 shadow-lg">
                   {allServices.map((service, index) => (
-                    <SelectItem key={index} value={service.title} className="hover:bg-gray-100 focus:bg-gray-100">
+                    <SelectItem key={index} value={service.title} className="hover:bg-blue-50">
                       {service.title}
                     </SelectItem>
                   ))}
                 </SelectContent>
               </Select>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
@@ -170,19 +170,19 @@ const ContactForm = () => {
               <FormControl>
                 <Textarea 
                   placeholder={translations.cta.descriptionPlaceholder} 
-                  className="min-h-32 bg-gray-50 border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-500" 
+                  className="min-h-32 focus:ring-blue-500 focus:border-blue-500" 
                   {...field} 
                   disabled={isSubmitting} 
                 />
               </FormControl>
-              <FormMessage className="text-red-500" />
+              <FormMessage />
             </FormItem>
           )}
         />
         
         <Button 
           type="submit" 
-          className="w-full bg-blue-600 text-white hover:bg-blue-700 rounded-full" 
+          className="w-full btn-primary" 
           disabled={isSubmitting}
         >
           <Send className="mr-2 h-4 w-4" /> 
