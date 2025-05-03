@@ -20,7 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Poppins', 'sans-serif'],
+				sans: ['Coco Gothic', 'sans-serif'],
+				anton: ['Anton', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -67,14 +68,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					blue: '#0A84FF',
-					darkBlue: '#0047FF',
+					background: '#140808',  // Dark brown/wine background
+					text: '#fffcef',        // Warm white text
+					blue: '#0A84FF',        // Keeping blue for accents if needed
+					darkBlue: '#0047FF',    // Keeping dark blue for consistency
 					black: '#000000',
 					white: '#FFFFFF',
 				}
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(90deg, #0A84FF 0%, #0047FF 100%)',
+				'gradient-primary': 'linear-gradient(90deg, #322222 0%, #140808 100%)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

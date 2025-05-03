@@ -7,17 +7,17 @@ const FeaturesSection = () => {
   const features = translations.features.items;
 
   return (
-    <section className="section-padding bg-gray-50" id="features">
+    <section className="section-padding bg-[#1a0e0e]" id="features">
       <div className="container mx-auto max-w-6xl">
         <h2 className="section-title text-center">{translations.features.title}</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           {features.map((feature, index) => (
-            <Card key={index} className="card-hover border border-gray-100">
+            <Card key={index} className="card-hover border border-brand-text/10 bg-[#241414]">
               <CardContent className="p-6">
                 <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <h3 className="text-xl font-anton uppercase tracking-wider mb-2 text-brand-text">{feature.title}</h3>
+                <p className="text-brand-text/80">{feature.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -14,7 +14,7 @@ interface FormValues {
   name: string;
   service: string;
   description: string;
-  email: string; // Added email field
+  email: string;
 }
 
 const ContactForm = () => {
@@ -84,8 +84,8 @@ const ContactForm = () => {
   
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-white rounded-lg p-6 shadow-lg border border-gray-100 max-w-md mx-auto">
-        <h3 className="text-xl font-bold mb-4 text-neutral-950">{translations.cta.formTitle}</h3>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 bg-[#1a0e0e] rounded-lg p-8 shadow-lg border border-brand-text/10 max-w-md mx-auto">
+        <h3 className="text-xl font-anton uppercase tracking-wide mb-6 text-brand-text">{translations.cta.formTitle}</h3>
         
         <FormField
           control={form.control}
@@ -93,16 +93,16 @@ const ContactForm = () => {
           rules={{ required: "This field is required" }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gray-700 font-medium">{translations.cta.nameLabel}</FormLabel>
+              <FormLabel className="text-brand-text/90 font-medium">{translations.cta.nameLabel}</FormLabel>
               <FormControl>
                 <Input 
                   placeholder={translations.cta.namePlaceholder} 
                   {...field} 
                   disabled={isSubmitting}
-                  className="focus:ring-blue-500 focus:border-blue-500" 
+                  className="bg-[#241414] border-brand-text/20 text-brand-text focus:border-brand-text/50 focus:ring-brand-text/20" 
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-400" />
             </FormItem>
           )}
         />
@@ -119,17 +119,17 @@ const ContactForm = () => {
           }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gray-700 font-medium">{translations.cta.emailLabel || "Email"}</FormLabel>
+              <FormLabel className="text-brand-text/90 font-medium">{translations.cta.emailLabel || "Email"}</FormLabel>
               <FormControl>
                 <Input 
                   type="email"
                   placeholder={translations.cta.emailPlaceholder || "Enter your email"} 
                   {...field} 
                   disabled={isSubmitting}
-                  className="focus:ring-blue-500 focus:border-blue-500" 
+                  className="bg-[#241414] border-brand-text/20 text-brand-text focus:border-brand-text/50 focus:ring-brand-text/20" 
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-400" />
             </FormItem>
           )}
         />
@@ -140,22 +140,22 @@ const ContactForm = () => {
           rules={{ required: "This field is required" }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gray-700 font-medium">{translations.cta.serviceLabel}</FormLabel>
+              <FormLabel className="text-brand-text/90 font-medium">{translations.cta.serviceLabel}</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value} disabled={isSubmitting}>
                 <FormControl>
-                  <SelectTrigger className="border-gray-300 focus:ring-blue-500 focus:border-blue-500">
+                  <SelectTrigger className="bg-[#241414] border-brand-text/20 text-brand-text focus:border-brand-text/50 focus:ring-brand-text/20">
                     <SelectValue placeholder={translations.cta.servicePlaceholder} />
                   </SelectTrigger>
                 </FormControl>
-                <SelectContent className="bg-white border border-gray-200 shadow-lg">
+                <SelectContent className="bg-[#241414] border border-brand-text/20 text-brand-text">
                   {allServices.map((service, index) => (
-                    <SelectItem key={index} value={service.title} className="hover:bg-blue-50">
+                    <SelectItem key={index} value={service.title} className="hover:bg-brand-text/10 focus:bg-brand-text/10">
                       {service.title}
                     </SelectItem>
                   ))}
                 </SelectContent>
               </Select>
-              <FormMessage />
+              <FormMessage className="text-red-400" />
             </FormItem>
           )}
         />
@@ -166,30 +166,30 @@ const ContactForm = () => {
           rules={{ required: "This field is required" }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-gray-700 font-medium">{translations.cta.descriptionLabel}</FormLabel>
+              <FormLabel className="text-brand-text/90 font-medium">{translations.cta.descriptionLabel}</FormLabel>
               <FormControl>
                 <Textarea 
                   placeholder={translations.cta.descriptionPlaceholder} 
-                  className="min-h-32 focus:ring-blue-500 focus:border-blue-500" 
+                  className="min-h-32 bg-[#241414] border-brand-text/20 text-brand-text focus:border-brand-text/50 focus:ring-brand-text/20" 
                   {...field} 
                   disabled={isSubmitting} 
                 />
               </FormControl>
-              <FormMessage />
+              <FormMessage className="text-red-400" />
             </FormItem>
           )}
         />
         
         <Button 
           type="submit" 
-          className="w-full btn-primary" 
+          className="w-full bg-brand-text text-brand-background hover:bg-brand-text/90 rounded-full" 
           disabled={isSubmitting}
         >
           <Send className="mr-2 h-4 w-4" /> 
           {isSubmitting ? (translations.cta.submitting || "Submitting...") : translations.cta.submitButton}
         </Button>
         
-        <p className="text-xs text-gray-500 text-center mt-4">
+        <p className="text-xs text-brand-text/60 text-center mt-4">
           {translations.cta.privacyNote || "Your information will be processed according to our privacy policy."}
         </p>
       </form>
