@@ -128,7 +128,7 @@
   }
   
   .section-subtitle {
-    @apply text-xl lg:text-2xl text-brand-text/80 mb-8 max-w-3xl mx-auto;
+    @apply text-xl lg:text-2xl text-brand-text/90 mb-8 max-w-3xl mx-auto;
   }
 
   .btn-primary {
