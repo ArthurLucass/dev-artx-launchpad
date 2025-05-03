@@ -142,4 +142,16 @@
   .card-hover {
     @apply transition-all hover:shadow-lg hover:scale-[1.02];
   }
+  
+  .white-card {
+    @apply bg-white text-gray-800 rounded-lg shadow-lg border border-gray-100;
+  }
+  
+  .white-card-hover {
+    @apply white-card transition-all hover:shadow-xl hover:scale-[1.02];
+  }
+  
+  .contrast-section {
+    @apply bg-white text-gray-800 shadow-md;
+  }
 }

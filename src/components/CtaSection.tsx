@@ -15,7 +15,8 @@ const CtaSection = () => {
           </p>
         </div>
         
-        <div id="contact-form">
+        <div id="contact-form" className="relative z-10">
+          <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full -z-10 transform translate-y-1/2"></div>
           <ContactForm />
         </div>
       </div>
