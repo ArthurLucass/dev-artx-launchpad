@@ -68,16 +68,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				brand: {
-					background: '#140808',  // Dark brown/wine background
-					text: '#fffcef',        // Warm white text
-					blue: '#0A84FF',        // Keeping blue for accents if needed
-					darkBlue: '#0047FF',    // Keeping dark blue for consistency
+					background: '#004aad',  // Atualizado para azul forte
+					text: '#fffcef',        // Mantido o branco quente
+					blue: '#0A84FF',        // Azul claro para destaque
+					darkBlue: '#00388c',    // Azul mais escuro para contrastes
 					black: '#000000',
 					white: '#FFFFFF',
 				}
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(90deg, #322222 0%, #140808 100%)',
+				'gradient-primary': 'linear-gradient(90deg, #0056c7 0%, #004aad 100%)', // Atualizado para tons de azul
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

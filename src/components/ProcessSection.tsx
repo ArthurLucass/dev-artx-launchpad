@@ -7,7 +7,7 @@ const ProcessSection = () => {
   const steps = translations.process.steps;
 
   return (
-    <section className="section-padding bg-[#1a0e0e] text-brand-text" id="process">
+    <section className="section-padding bg-[#0056c7] text-brand-text" id="process">
       <div className="container mx-auto max-w-6xl">
         <h2 className="section-title text-brand-text text-center font-anton uppercase tracking-wider">{translations.process.title}</h2>
         

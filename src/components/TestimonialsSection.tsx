@@ -16,12 +16,12 @@ const TestimonialsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="card-hover bg-[#1a0e0e] border border-brand-text/10">
+            <Card key={index} className="card-hover bg-[#0056c7] border border-brand-text/10">
               <CardContent className="p-6">
                 <div className="text-3xl mb-6 text-brand-text/70">"</div>
                 <p className="mb-6 text-lg italic text-brand-text/90">{testimonial.quote}</p>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-[#241414] flex items-center justify-center text-brand-text font-bold border border-brand-text/20">
+                  <div className="w-10 h-10 rounded-full bg-[#00388c] flex items-center justify-center text-brand-text font-bold border border-brand-text/20">
                     {testimonial.author.charAt(0)}
                   </div>
                   <div className="ml-3">

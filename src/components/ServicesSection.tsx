@@ -17,7 +17,7 @@ const ServicesSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
           {services.map((service, index) => (
-            <Card key={index} className={`card-hover bg-[#1a0e0e] ${service.popular ? 'border-brand-text/50 border-2' : 'border border-brand-text/10'}`}>
+            <Card key={index} className={`card-hover bg-[#0056c7] ${service.popular ? 'border-brand-text/50 border-2' : 'border border-brand-text/10'}`}>
               <CardHeader className={`pb-2 ${service.popular ? 'pt-2' : 'pt-6'}`}>
                 {service.popular && (
                   <div className="w-full -mt-2 mb-2 my-0">

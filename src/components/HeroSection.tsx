@@ -8,8 +8,8 @@ const HeroSection = () => {
   return (
     <section className="pt-28 pb-16 md:pt-36 md:pb-24 px-4 md:px-6 relative overflow-hidden bg-brand-background">
       <div className="absolute top-0 right-0 w-full h-full">
-        <div className="absolute top-20 right-[-10%] w-64 h-64 md:w-96 md:h-96 rounded-full bg-[#2a1010] opacity-20 blur-3xl"></div>
-        <div className="absolute bottom-20 left-[-10%] w-64 h-64 md:w-80 md:h-80 rounded-full bg-[#2a1010] opacity-20 blur-3xl"></div>
+        <div className="absolute top-20 right-[-10%] w-64 h-64 md:w-96 md:h-96 rounded-full bg-[#0056c7] opacity-20 blur-3xl"></div>
+        <div className="absolute bottom-20 left-[-10%] w-64 h-64 md:w-80 md:h-80 rounded-full bg-[#0056c7] opacity-20 blur-3xl"></div>
       </div>
       
       <div className="container mx-auto max-w-7xl">

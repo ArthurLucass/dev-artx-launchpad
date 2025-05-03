@@ -12,7 +12,7 @@ const FaqSection = () => {
   const faqs = translations.faq.items;
 
   return (
-    <section className="section-padding bg-[#1a0e0e]" id="faq">
+    <section className="section-padding bg-[#0056c7]" id="faq">
       <div className="container mx-auto max-w-4xl">
         <h2 className="section-title text-center font-anton uppercase tracking-wider">{translations.faq.title}</h2>
         
