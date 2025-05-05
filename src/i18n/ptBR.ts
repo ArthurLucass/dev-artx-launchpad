@@ -46,6 +46,7 @@ export const ptBR = {
   services: {
     title: 'Serviços que Oferecemos',
     subtitle: 'Soluções web profissionais adaptadas às suas necessidades específicas',
+    popular: 'Mais Popular',
     items: [
       {
         title: "Sites de Portfólio",
@@ -54,7 +55,7 @@ export const ptBR = {
         popular: false,
       },
       {
-        title: "Páginas de Destino",
+        title: "Landing Pages",
         description: "Páginas de alta conversão que vendem seus produtos/serviços.",
         icon: "🚀",
         popular: true,
@@ -160,6 +161,15 @@ export const ptBR = {
     errorTitle: 'Erro',
     errorMessage: 'Algo deu errado. Por favor, tente novamente mais tarde.',
     privacyNote: 'Suas informações estão seguras e serão usadas apenas para responder à sua consulta.'
+  },
+  footer: {
+    tagline: 'Websites que Funcionam.', // Added tagline
+    instagramAlt: 'Perfil do Instagram',
+    linkedinAlt: 'Perfil do LinkedIn',
+    emailAlt: 'Enviar um Email',
+    copyright: '© 2025 Dev Artx. Todos os Direitos Reservados.',
+    builtWith: 'Construído com ❤️ por Dev Artx Studio.',
+    // Removed duplicate/unused keys like slogan, instagram, linkedin, email, rights, builtBy as they are covered by the Alt texts or copyright/builtWith
   },
   languageToggle: {
     pt: 'PT',

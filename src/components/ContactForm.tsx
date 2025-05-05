@@ -143,7 +143,7 @@ const ContactForm = () => {
               <FormLabel className="text-gray-700 font-medium">{translations.cta.serviceLabel}</FormLabel>
               <Select onValueChange={field.onChange} defaultValue={field.value} disabled={isSubmitting}>
                 <FormControl>
-                  <SelectTrigger className="border-gray-300 focus:ring-blue-500 focus:border-blue-500">
+                  <SelectTrigger className="border-gray-300 focus:ring-blue-500 focus:border-blue-500 text-neutral-950">
                     <SelectValue placeholder={translations.cta.servicePlaceholder} />
                   </SelectTrigger>
                 </FormControl>

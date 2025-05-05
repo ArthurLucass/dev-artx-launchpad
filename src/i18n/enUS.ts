@@ -46,6 +46,7 @@ export const enUS = {
   services: {
     title: 'Services We Offer',
     subtitle: 'Professional web solutions tailored to your specific needs',
+    popular: 'Most Popular',
     items: [
       {
         title: "Portfolio Websites",
@@ -160,6 +161,15 @@ export const enUS = {
     errorTitle: 'Error',
     errorMessage: 'Something went wrong. Please try again later.',
     privacyNote: 'Your information is secure and will only be used to respond to your inquiry.'
+  },
+  footer: {
+    tagline: 'Websites that Work.', // Added tagline
+    instagramAlt: 'Instagram Profile',
+    linkedinAlt: 'LinkedIn Profile',
+    emailAlt: 'Send an Email',
+    copyright: '© 2025 Dev Artx. All Rights Reserved.',
+    builtWith: 'Built with ❤️ by Dev Artx Studio.',
+    // Removed duplicate/unused keys like slogan, instagram, linkedin, email, rights, builtBy as they are covered by the Alt texts or copyright/builtWith
   },
   languageToggle: {
     pt: 'PT',

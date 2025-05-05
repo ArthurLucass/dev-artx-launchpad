@@ -14,17 +14,23 @@ const ServicesSection = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {services.map((service, index) => <Card key={index} className={`card-hover ${service.popular ? 'border-brand-blue border-2' : 'border border-gray-100'}`}>
+          {services.map((service, index) => (
+            <Card
+              key={index}
+              className={`card-hover flex flex-col ${service.popular ? 'border-brand-blue border-2' : 'border border-gray-100'}`}
+            >
               <CardHeader className={`pb-2 ${service.popular ? 'pt-2' : 'pt-6'}`}>
-                {service.popular && <div className="w-full -mt-2 mb-2 my-0">
+                {service.popular && (
+                  <div className="w-full mb-2">
                     <span className="bg-gradient-primary text-white text-xs font-medium px-3 py-1 rounded-full">
-                      Most Popular
+                      {translations.services.popular}
                     </span>
-                  </div>}
+                  </div>
+                )}
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <CardTitle className="text-xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent className="pb-2">
+              <CardContent className="pb-2 flex-grow">
                 <CardDescription>{service.description}</CardDescription>
               </CardContent>
               <CardFooter>
@@ -32,7 +38,8 @@ const ServicesSection = () => {
                   <a href="#contact">{translations.header.getStarted}</a>
                 </Button>
               </CardFooter>
-            </Card>)}
+            </Card>
+          ))}
         </div>
       </div>
     </section>;
