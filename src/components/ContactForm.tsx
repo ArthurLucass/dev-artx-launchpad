@@ -99,7 +99,7 @@ const ContactForm = () => {
                   placeholder={translations.cta.namePlaceholder} 
                   {...field} 
                   disabled={isSubmitting}
-                  className="focus:ring-blue-500 focus:border-blue-500" 
+                  className="focus:ring-blue-500 focus:border-blue-500 text-neutral-950" 
                 />
               </FormControl>
               <FormMessage />
@@ -126,7 +126,7 @@ const ContactForm = () => {
                   placeholder={translations.cta.emailPlaceholder || "Enter your email"} 
                   {...field} 
                   disabled={isSubmitting}
-                  className="focus:ring-blue-500 focus:border-blue-500" 
+                  className="focus:ring-blue-500 focus:border-blue-500 text-neutral-950" 
                 />
               </FormControl>
               <FormMessage />
@@ -170,7 +170,7 @@ const ContactForm = () => {
               <FormControl>
                 <Textarea 
                   placeholder={translations.cta.descriptionPlaceholder} 
-                  className="min-h-32 focus:ring-blue-500 focus:border-blue-500" 
+                  className="min-h-32 focus:ring-blue-500 focus:border-blue-500 text-neutral-950" 
                   {...field} 
                   disabled={isSubmitting} 
                 />

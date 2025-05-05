@@ -163,13 +163,13 @@ export const enUS = {
     privacyNote: 'Your information is secure and will only be used to respond to your inquiry.'
   },
   footer: {
-    tagline: 'Websites that Work.', // Added tagline
-    instagramAlt: 'Instagram Profile',
-    linkedinAlt: 'LinkedIn Profile',
-    emailAlt: 'Send an Email',
-    copyright: '© 2025 Dev Artx. All Rights Reserved.',
-    builtWith: 'Built with ❤️ by Dev Artx Studio.',
-    // Removed duplicate/unused keys like slogan, instagram, linkedin, email, rights, builtBy as they are covered by the Alt texts or copyright/builtWith
+    tagline: "Websites that Work.",
+    instagram: "Instagram",
+    linkedin: "LinkedIn",
+    github: "GitHub",
+    email: "Email",
+    copyright: "© 2025 Dev Artx. All Rights Reserved.",
+    builtBy: "Built with ❤️ by Dev Artx Studio."
   },
   languageToggle: {
     pt: 'PT',
