@@ -9,7 +9,7 @@ export const ptBR = {
   },
   hero: {
     title: 'Construa Sua Presença Digital com',
-    subtitle: 'Lance seu Portfólio, Site, Página de Destino ou Página de Vendas com velocidade e estilo impressionantes.',
+    subtitle: 'Lance seu Portfólio, Site, Landing Page ou Página de Vendas com velocidade e estilo impressionantes.',
     getStarted: 'Comece Hoje →',
     seeWork: 'Ver Nosso Trabalho'
   },

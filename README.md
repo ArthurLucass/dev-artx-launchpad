@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# Dev Artx Launchpad 🚀
 
-## Project info
+Bem-vindo ao Dev Artx Launchpad! Este projeto é uma aplicação web moderna construída para criar e lançar rapidamente portfólios, websites, landing pages e páginas de vendas com design elegante e otimizado para conversão.
 
-**URL**: https://lovable.dev/projects/ec82b9c3-4d5c-4066-97f6-9eae997ee0ab
+## ✨ Funcionalidades Principais
 
-## How can I edit this code?
+O site gerado por este projeto inclui as seguintes seções e funcionalidades:
 
-There are several ways of editing your application.
+*   **Serviços:** Detalha os tipos de sites oferecidos (Portfólios, Landing Pages, Páginas de Vendas, Link Pages).
+*   **Processo:** Explica o fluxo de trabalho em três etapas simples (Briefing, Criação, Lançamento).
+*   **Depoimentos:** Exibe feedback de clientes satisfeitos.
+*   **FAQ:** Responde a perguntas frequentes sobre prazos, domínio, hospedagem e manutenção.
+*   **Contato (CTA):** Um formulário para os visitantes entrarem em contato e solicitarem um projeto.
+*   **Internacionalização:** Suporte para múltiplos idiomas (Português e Inglês) usando React Context (<mcfile name="LanguageContext.tsx" path="c:\Users\Arthu\OneDrive\Área de Trabalho\00_DEV\dev-artx-launchpad\src\contexts\LanguageContext.tsx"></mcfile>).
+*   **Design Moderno:** Interface construída com componentes reutilizáveis e estilos modernos.
 
-**Use Lovable**
+## 🛠️ Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ec82b9c3-4d5c-4066-97f6-9eae997ee0ab) and start prompting.
+Este projeto foi construído com as seguintes tecnologias:
 
-Changes made via Lovable will be committed automatically to this repo.
+*   **Vite:** Build tool rápida para desenvolvimento web moderno.
+*   **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+*   **TypeScript:** Superset do JavaScript que adiciona tipagem estática.
+*   **Tailwind CSS:** Framework CSS utility-first para estilização rápida.
+*   **shadcn/ui:** Coleção de componentes de UI reutilizáveis.
+*   **React Router:** Para gerenciamento de rotas na aplicação.
+*   **React Hook Form:** Para gerenciamento de formulários.
+*   **TanStack Query:** Para gerenciamento de estado assíncrono e caching.
 
-**Use your preferred IDE**
+## 🚀 Como Começar (Desenvolvimento Local)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Para rodar este projeto localmente, siga os passos abaixo:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Pré-requisitos:**
 
-Follow these steps:
+*   Node.js e npm (ou yarn) instalados. [Instale com nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+**Passos:**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1.  **Clone o repositório:**
+    ```bash
+    git clone <URL_DO_SEU_REPOSITORIO_GIT>
+    ```
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd dev-artx-launchpad
+    ```
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    # ou
+    # yarn install
+    ```
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    # ou
+    # yarn dev
+    ```
+    A aplicação estará disponível em `http://localhost:8080` (ou outra porta, se configurada).
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/ec82b9c3-4d5c-4066-97f6-9eae997ee0ab) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## ஸ்ட் Estrutura do Projeto (Visão Geral)
