@@ -46,7 +46,7 @@ formData.append('_redirect', 'https://dev-artx.vercel.app/'); // Evita redirecio
 
       
       // Send form data to a service like FormSubmit
-      const response = await fetch('https://formsubmit.co/artxcontato@outlook.com', {
+      const response = await fetch('https://formsubmit.co/arrtxweb@gmail.com', {
         method: 'POST',
         body: formData,
       });

@@ -38,7 +38,7 @@ const Footer = () => {
                 <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.5.49.09.66-.213.66-.472 0-.23-.01-1.022-.015-1.86-2.782.605-3.369-1.343-3.369-1.343-.446-1.13-1.09-1.43-1.09-1.43-.89-.608.07-.596.07-.596.98.07 1.497 1.014 1.497 1.014.87 1.49 2.28 1.06 2.836.81.09-.63.34-1.06.616-1.305-2.166-.248-4.444-1.083-4.444-4.83 0-1.068.38-1.942 1.003-2.625-.1-.248-.434-1.24.094-2.587 0 0 .82-.263 2.68 1.003A9.42 9.42 0 0112 6.67c.83.004 1.66.115 2.44.337 1.86-1.266 2.677-1.003 2.677-1.003.53 1.347.197 2.34.098 2.587.625.683 1.002 1.557 1.002 2.625 0 3.758-2.28 4.58-4.45 4.822.35.308.656.916.656 1.847 0 1.33-.012 2.403-.012 2.73 0 .26.168.565.666.47C19.137 20.194 22 16.44 22 12.017 22 6.484 17.522 2 12 2z" clipRule="evenodd" />
               </svg>
             </a>
-            <a href="mailto:artxcontato@outlook.com" className="text-white/80 hover:text-white transition-colors">
+            <a href="mailto:arrtxweb@gmail.com" className="text-white/80 hover:text-white transition-colors">
               <span className="sr-only">{translations.footer.email}</span>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

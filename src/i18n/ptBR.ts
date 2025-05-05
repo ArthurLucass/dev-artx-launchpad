@@ -134,10 +134,6 @@ export const ptBR = {
       {
         question: 'Vocês oferecem manutenção de site?',
         answer: 'Sim, oferecemos vários pacotes de manutenção para manter seu site atualizado, seguro e funcionando de maneira ideal. Nossos serviços de manutenção incluem atualizações regulares, backups, verificações de segurança e otimização de desempenho.'
-      },
-      {
-        question: 'Posso atualizar o conteúdo sozinho?',
-        answer: 'Com certeza! Construímos todos os nossos sites com sistemas de gerenciamento de conteúdo fáceis de usar que permitem que você faça atualizações básicas por conta própria. Também fornecemos um minicurso complementar sobre como gerenciar seu site com cada projeto.'
       }
     ]
   },

@@ -134,10 +134,6 @@ export const enUS = {
       {
         question: 'Do you provide website maintenance?',
         answer: 'Yes, we offer various maintenance packages to keep your website updated, secure, and running optimally. Our maintenance services include regular updates, backups, security checks, and performance optimization.'
-      },
-      {
-        question: 'Can I update content on my own?',
-        answer: 'Absolutely! We build all our sites with user-friendly content management systems that allow you to make basic updates yourself. We also provide a complimentary mini-course on managing your site with every project.'
       }
     ]
   },
