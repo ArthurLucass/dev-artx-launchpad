@@ -40,7 +40,10 @@ const ContactForm = () => {
       formData.append('service', data.service);
       formData.append('description', data.description);
       formData.append('email', data.email);
-      formData.append('to', 'artxcontato@outlook.com');
+      formData.append('_captcha', 'false'); // Desativa o captcha
+formData.append('_template', 'table'); // Estiliza o e-mail em tabela
+formData.append('_redirect', 'https://dev-artx.vercel.app/'); // Evita redirecionamento do FormSubmit
+
       
       // Send form data to a service like FormSubmit
       const response = await fetch('https://formsubmit.co/artxcontato@outlook.com', {
