@@ -1,6 +1,6 @@
 # Dev Artx Launchpad 🚀
 
-Bem-vindo ao Dev Artx Launchpad! Este projeto é uma aplicação web moderna construída para criar e lançar rapidamente portfólios, websites, landing pages e páginas de vendas com design elegante e otimizado para conversão.
+Bem-vindo ao Dev Artx! Este projeto é uma aplicação web moderna construída para criar e lançar rapidamente portfólios, websites, landing pages e páginas de vendas com design elegante e otimizado para conversão.
 
 ## ✨ Funcionalidades Principais
 
@@ -59,4 +59,6 @@ Para rodar este projeto localmente, siga os passos abaixo:
     ```
     A aplicação estará disponível em `http://localhost:8080` (ou outra porta, se configurada).
 
-## ஸ்ட் Estrutura do Projeto (Visão Geral)
+## Estrutura do Projeto (Visão Geral)
+
+![image](https://github.com/user-attachments/assets/f3eab158-e181-4627-8be9-27b54ff6d55a)
