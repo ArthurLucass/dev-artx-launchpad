@@ -60,13 +60,10 @@ const ContactForm = () => {
       formData.append("_redirect", "https://dev-artx.vercel.app/"); // Evita redirecionamento do FormSubmit
 
       // Send form data to a service like FormSubmit
-      const response = await fetch(
-        "https://devartx1.app.n8n.cloud/webhook/formsubmit",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
+      const response = await fetch("https://formsubmit.co/arrtxweb@gmail.com", {
+        method: "POST",
+        body: formData,
+      });
 
       if (response.ok) {
         toast({
